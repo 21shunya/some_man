@@ -8,7 +8,7 @@ export default function Experience() {
         duration: "10 месяцев",
         name: "Company 1",
         city: "Moscow",
-        link: "companyone/",
+        link: "companyOne/",
         position: "Backend Developer",
         stack: [
             "Typescript, NestJS (90% time) (express), TypeORM (postgres), Plain Sql (Clickhouse, MySQL)",
@@ -26,7 +26,25 @@ export default function Experience() {
         duration: "10 месяцев",
         name: "Company 2",
         city: "Moscow",
-        link: "companyone/",
+        link: "companyTwo/",
+        position: "Backend Developer",
+        stack: [
+            "Typescript, NestJS (90% time) (express), TypeORM (postgres), Plain Sql (Clickhouse, MySQL)",
+            "Clickhouse: a lot of work with table engines *MergeTree, MaterializedViews, chains of joins, queryoptimizations, work with BIG DATA (Terabytes tables and tens of billions of lines)",
+            "React (10% time), Redux, ChartJS, styled components",
+            " Python (numpy, matplotlib, jupyter)",
+            "RabbitMQ, Redis, ELK",
+            "Docker (compose, swarm), Kubernetes, minikube, werf, helm charts, Gitlab CI, Zabbix",
+            "Strict Git-Flow"
+        ]
+    },
+    {
+        startDate: "Июнь 2021",
+        endDate: "настоящее время",
+        duration: "10 месяцев",
+        name: "Company 3",
+        city: "Moscow",
+        link: "companyThree/",
         position: "Backend Developer",
         stack: [
             "Typescript, NestJS (90% time) (express), TypeORM (postgres), Plain Sql (Clickhouse, MySQL)",
@@ -40,12 +58,12 @@ export default function Experience() {
     }]
 
     return(
-        <ul className="exp-list">
+        <div className="exp-list">
             {exp.map((item, index) => {
                 return (
                     <ExpItem key={index} item={item} />
                 )
             })}
-        </ul>
+        </div>
     )
 }

@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #546c8c;
-  width: 700px !important;
+  min-width: 700px !important;
   height: 100vh;
   margin-left: 96px;
   padding: 40px 0px 0px 30px;
@@ -172,7 +172,6 @@ p.text-secondary {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 900px;
   margin: 33px 30px;
 }
 
@@ -220,18 +219,76 @@ p.text-secondary {
 .exp-list {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
-  list-style-position: outside;
-  padding: 15px 0 0 0;
-  margin: 0;
-}
-
-.exp-item::before {
-  content: "Июнь 2021";
-  border-radius: 1ch;
-  margin-inline-end: 1ch;
 }
 
 .exp-item {
-  padding-top: 30px;
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.exp-duration {
+  padding: 0;
+  min-width: 160px;
+  min-height: 63px;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.07em;
+  color: #546c8c;
+}
+
+.exp-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.exp-info-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.exp-companyName {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #546C8C;
+  letter-spacing: -0.02em;
+}
+
+.exp-companyInfo {
+  margin-left: 15px;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.07em;
+  color: #84a1be;
+}
+
+.exp-positon {
+  margin-top: 30px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #535962;
+  letter-spacing: -0.02em;
+}
+
+.exp-stack-list {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 0;
+  color: #262223;
+}
+
+.exp-stack-title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.08em;
 }
