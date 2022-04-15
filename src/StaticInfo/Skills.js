@@ -13,24 +13,24 @@ export default function Skills(props) {
     <div className="static-item">
       <div className="static-item-title">
         <div className="title-marker">
-          <p className="ellipse"></p>
+          <span className="ellipse"></span>
           {props.skills.title}
         </div>
         <img src="icons.svg" />
       </div>
       <div className="pos-info-item">
-        <p className="text-secondary">языки:</p>
+        <span className="text-secondary">языки:</span>
         <ul className="static-info-list">
           {props.skills.langs.map((lang, index) => (
             <li className="pos-info-item" key={index}>
-              <p style={styles.langName}>{lang.name} </p>
-              <p className="text-secondary">{lang.descr}</p>
+              <span style={styles.langName}>{lang.name} </span>
+              <sapn className="text-secondary">{lang.descr}</sapn>
             </li>
           ))}
         </ul>
       </div>
       <div>
-        <p className="text-secondary">навыки:</p>
+        <sapn className="text-secondary">навыки:</sapn>
         <ul className="shape_list">
           {props.skills.skls.map((line, index) => {
             return <Shapes key={index} line={line} index={index}/>;

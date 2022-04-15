@@ -6,7 +6,7 @@ export default function SkillShape({ item, color, index }) {
     color: "#546C8C",
     borderRadius: "20px",
     padding: "7px 10px",
-    margin: "0 15px",
+    margin: "0 13px",
   };
 
   if (color === "blue") {

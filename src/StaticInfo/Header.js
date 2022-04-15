@@ -2,13 +2,10 @@ import React from "react";
 
 const styles = {
     tg: {
-        display: 'flex',
-        flexDirection: 'row',
         color: '#9CC1D9',
     },
     p: {
         fontWeight: 700,
-        margin: 0,
     }
 }
 
@@ -33,7 +30,7 @@ export default function Header() {
                 </div>
                 <div className="communication">
                     <div style={styles.tg}>
-                        Telegram: <p style={styles.p}>{staticHeader.tg}</p>
+                        Telegram: <sapn style={styles.p}>{staticHeader.tg}</sapn>
                     </div>
                     <div>
                         {staticHeader.email}

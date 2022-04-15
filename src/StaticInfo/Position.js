@@ -5,7 +5,7 @@ export default function Position(props) {
     <div className="static-item">
       <div className="static-item-title">
         <div className="title-marker">
-          <p className="ellipse"></p>
+          <span className="ellipse"></span>
           {props.position.title}
         </div>
         <img src="icons.svg" />
@@ -14,8 +14,8 @@ export default function Position(props) {
         <div className="positiion-name">{props.position.pos}</div>
         <ul className="static-info-list">
           {props.position.info.map((item, index) => (
-            <li className="pos-info-item" key={index}>
-              <p className="text-secondary">{item.name}:</p> {item.descr}
+            <li key={index}>
+              <span className="text-secondary">{item.name}: </span> {item.descr}
             </li>
           ))}
         </ul>

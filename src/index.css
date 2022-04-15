@@ -5,7 +5,7 @@ body {
   font-family: "Bellota Text", "Montserrat", cursive, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.07em;
   margin: 0;
@@ -43,14 +43,14 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .myName {
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 33px;
+  font-size: 31px;
   line-height: 38px;
   color: #f2f2f2;
   padding-bottom: 3px;
@@ -92,7 +92,7 @@ body {
   font-family: "Bellota Text";
   font-style: normal;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 24px;
   /* identical to box height */
 
@@ -130,7 +130,7 @@ body {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 25px;
   color: #9cc1d9;
   padding-bottom: 5px;
@@ -139,7 +139,7 @@ body {
 .static-info-list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 25px;
 }
 
 .pos-info-item {
@@ -198,7 +198,7 @@ p.text-secondary {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
-  font-size: 33px;
+  font-size: 31px;
   line-height: 38px;
   color: #535962;
 }
@@ -207,7 +207,7 @@ p.text-secondary {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 25px;
   color: #84a1be;
   padding: 0 15px;
