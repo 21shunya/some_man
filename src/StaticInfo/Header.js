@@ -30,7 +30,7 @@ export default function Header() {
                 </div>
                 <div className="communication">
                     <div style={styles.tg}>
-                        Telegram: <sapn style={styles.p}>{staticHeader.tg}</sapn>
+                        Telegram: <span style={styles.p}>{staticHeader.tg}</span>
                     </div>
                     <div>
                         {staticHeader.email}

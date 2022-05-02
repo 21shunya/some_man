@@ -24,13 +24,13 @@ export default function Skills(props) {
           {props.skills.langs.map((lang, index) => (
             <li className="pos-info-item" key={index}>
               <span style={styles.langName}>{lang.name} </span>
-              <sapn className="text-secondary">{lang.descr}</sapn>
+              <span className="text-secondary">{lang.descr}</span>
             </li>
           ))}
         </ul>
       </div>
       <div>
-        <sapn className="text-secondary">навыки:</sapn>
+        <span className="text-secondary">навыки:</span>
         <ul className="shape_list">
           {props.skills.skls.map((line, index) => {
             return <Shapes key={index} line={line} index={index}/>;
