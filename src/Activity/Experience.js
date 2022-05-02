@@ -58,7 +58,7 @@ export default function Experience() {
     }]
 
     return(
-        <div className="exp-list">
+        <div id="exp" className="exp-list">
             {exp.map((item, index) => {
                 return (
                     <ExpItem key={index} item={item} />

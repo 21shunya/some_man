@@ -16,6 +16,7 @@ body {
 .body-wrap {
   display: flex;
   flex-direction: row;
+  position: fixed;
 }
 
 .static-info-wrap {
@@ -171,7 +172,7 @@ p.text-secondary {
 .activity-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 95vh;
   margin: 33px 30px;
 }
 
@@ -179,6 +180,12 @@ p.text-secondary {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.activity-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
 }
 
 .nav-caption {
@@ -193,23 +200,24 @@ p.text-secondary {
   align-items: flex-end;
 }
 
-.nav-choosen {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 31px;
-  line-height: 38px;
-  color: #535962;
-}
-
-.nav-secondary {
+.nav-btn {
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
   color: #84a1be;
-  padding: 0 15px;
+  padding: 0;
+  padding-right: 30px;
+  border: none;
+  background: transparent;
+}
+
+.nav-btn:focus {
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 38px;
+  color: #535962;
 }
 
 .link {
