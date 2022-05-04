@@ -1,7 +1,8 @@
 import React from "react";
+import NavBtn from "./NavBtn";
 
-export default function Header() {
-
+export default function Header(btnName) {
+let name = 'exp'
     function scrollToSection(arg) {
         const experience = document.getElementById(arg);
         experience.scrollIntoView({block: "start", behavior: "smooth"});
@@ -11,9 +12,9 @@ export default function Header() {
     <div className="activity-header-wrapper">
       <div className="nav-caption">
         <div className="activity-nav">
-          <button className="nav-btn" onClick={scrollToSection.bind(this, "exp")}>Опыт работы</button>
-          <button className="nav-btn" onClick={scrollToSection.bind(this, "education")}>Образование</button>
-          <button className="nav-btn" onClick={scrollToSection.bind(this, "about")}>Обо мне</button>
+          <NavBtn name={'exp'} btnName={btnName} onClick={scrollToSection.bind(this, "exp")}>Опыт работы</NavBtn>
+          <NavBtn name={'education'} btnName={btnName} onClick={scrollToSection.bind(this, "education")}>Образование</NavBtn>
+          <NavBtn name={'about'} btnName={btnName} onClick={scrollToSection.bind(this, "about")}>Обо мне</NavBtn>
         </div>
         <span>1 год и 5 месяцев</span>
       </div>
