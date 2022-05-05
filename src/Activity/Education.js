@@ -1,8 +1,10 @@
 import React from "react";
+import ActivityItem from "./ActivityItem";
 
-export default function Education() {
+export default function Education(btnName) {
+  const elemName = 'education'
   return (
-    <div id="education" className="exp-list">
+    <ActivityItem elemName={elemName} btnName={btnName} id="education">
       <div>Education</div>
       <div>
         Sapien dictumst felis et donec sed ut nullam. Ullamcorper eu metus dolor
@@ -82,6 +84,6 @@ export default function Education() {
         egestas morbi tincidunt elementum. Vivamus risus vel donec volutpat,
         erat.
       </div>
-    </div>
+    </ActivityItem>
   );
 }

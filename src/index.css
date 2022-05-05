@@ -200,26 +200,6 @@ p.text-secondary {
   align-items: flex-end;
 }
 
-.nav-btn {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 25px;
-  color: #84a1be;
-  padding: 0;
-  padding-right: 30px;
-  border: none;
-  background: transparent;
-}
-
-.nav-btn:focus {
-  font-weight: 700;
-  font-size: 31px;
-  line-height: 38px;
-  color: #535962;
-}
-
 .link {
   padding: 0 7.5px;
 }

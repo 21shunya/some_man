@@ -1,9 +1,10 @@
 import React from "react";
+import ActivityItem from "./ActivityItem";
 
-export default function About() {
+export default function About(btnName) {
+  const elemName = 'about'
   return (
-    <div id="about" className="exp-list">
-      <div>-----</div>
+    <ActivityItem id="about" elemName={elemName} btnName={btnName}>
       <div>About</div>
       <div>
         Sapien dictumst felis et donec sed ut nullam. Ullamcorper eu metus dolor
@@ -29,6 +30,6 @@ export default function About() {
         egestas morbi tincidunt elementum. Vivamus risus vel donec volutpat,
         erat.
       </div>
-    </div>
+    </ActivityItem>
   );
 }
