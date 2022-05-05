@@ -1,5 +1,5 @@
 import React from "react";
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 const StyledBtn = styled.button`
   font-family: "Ubuntu";
@@ -12,34 +12,25 @@ const StyledBtn = styled.button`
   padding-right: 30px;
   border: none;
   background: transparent;
-  &:focus {
+  &:hover {
     font-weight: 700;
     font-size: 31px;
     line-height: 38px;
     color: #535962;
-  };
+  }
+`;
 
-  ${props => props.focus && css `
+const FocusBtn = styled(StyledBtn)`
   font-weight: 700;
   font-size: 31px;
   line-height: 38px;
   color: #535962;
-  `}
-`;
-
-const FocusBtn = styled(StyledBtn) `
-font-weight: 700;
-font-size: 31px;
-line-height: 38px;
-color: #535962;
 `;
 
 export default function NavBtn(props) {
-    console.log(props.name, props.btnName.btnName)
-    if (props.name === props.btnName.btnName){
-        return <FocusBtn {...props} />;
-    } else {
-        console.log('NOT FOCUS')
-        return <StyledBtn {...props} />;
-    }
+  return props.name === props.btnName.btnName ? (
+    <FocusBtn {...props} />
+  ) : (
+    <StyledBtn {...props} />
+  );
 }
