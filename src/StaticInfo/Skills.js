@@ -12,14 +12,14 @@ const styles = {
 };
 
 export default function Skills(props) {
- 
+  const {mainInfo} = {...props}
   return (
     <InfoBlock>
-      <ItemTitle props={props}></ItemTitle>
+      <ItemTitle title={mainInfo.title}></ItemTitle>
       <div className="pos-info-item">
         <span className="text-secondary">языки:</span>
         <ul className="static-info-list">
-          {props.skills.langs.map((lang, index) => (
+          {mainInfo.langs.map((lang, index) => (
             <li className="pos-info-item" key={index}>
               <span style={styles.langName}>{lang.name} </span>
               <span className="text-secondary">{lang.descr}</span>
@@ -30,7 +30,7 @@ export default function Skills(props) {
       <div>
         <span className="text-secondary">навыки:</span>
         <ul className="shape_list">
-          {props.skills.skls.map((line, index) => {
+          {mainInfo.skls.map((line, index) => {
             return <Shapes key={index} line={line} index={index}/>;
           })}
         </ul>

@@ -3,14 +3,14 @@ import InfoBlock from "./InfoBlock";
 import ItemTitle from "./ItemTitle";
 
 export default function Position(props) {
-
+  const {mainInfo} = {...props}
   return (
     <InfoBlock>
-      <ItemTitle props={props}></ItemTitle>
+      <ItemTitle title={mainInfo.title}></ItemTitle>
       <div className="position-info">
-        <div className="positiion-name">{props.position.pos}</div>
+        <div className="positiion-name">{mainInfo.pos}</div>
         <ul className="static-info-list">
-          {props.position.info.map((item, index) => (
+          {mainInfo.info.map((item, index) => (
             <li key={index}>
               <span className="text-secondary">{item.name}: </span> {item.descr}
             </li>

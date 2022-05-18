@@ -26,8 +26,7 @@ export default function ItemTitle(props) {
     <StyledTitle>
         <div className="title-marker">
           <span className="ellipse"></span>
-          пёс барбос
-          {/* {props.props.position.title} */}
+          {props.title}
         </div>
         <button className="img-btn" onClick={changeVisibility}>
           <img src="icons.svg" />
