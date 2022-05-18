@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import visibilityContext from "../VisibilityContext";
 
@@ -19,18 +19,26 @@ const StyledTitle = styled.div`
   margin-bottom: 10px;
 `;
 
+const StyledIconButton = styled.button`
+  background: transparent;
+  border: none;
+  padding: 2px;
+  transform: rotate(${(props) => props.rotation});
+  transition: 0.6s ease-out;
+`;
+
 export default function ItemTitle(props) {
-    const {changeVisibility} = useContext(visibilityContext)
+  const { changeVisibility, rotation } = useContext(visibilityContext);
 
   return (
     <StyledTitle>
-        <div className="title-marker">
-          <span className="ellipse"></span>
-          {props.title}
-        </div>
-        <button className="img-btn" onClick={changeVisibility}>
-          <img src="icons.svg" />
-        </button>
+      <div className="title-marker">
+        <span className="ellipse"></span>
+        {props.title}
+      </div>
+      <StyledIconButton rotation={rotation} onClick={changeVisibility}>
+        <img src="icons.svg" />
+      </StyledIconButton>
     </StyledTitle>
   );
 }

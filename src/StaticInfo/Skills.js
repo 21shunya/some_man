@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Shapes from "./Shapes.js";
 import InfoBlock from "./InfoBlock.js";
 import ItemTitle from "./ItemTitle.js";

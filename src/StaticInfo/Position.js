@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import InfoBlock from "./InfoBlock";
 import ItemTitle from "./ItemTitle";
 
 export default function Position(props) {
   const {mainInfo} = {...props}
+  
   return (
     <InfoBlock>
       <ItemTitle title={mainInfo.title}></ItemTitle>

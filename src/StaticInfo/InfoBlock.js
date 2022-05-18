@@ -13,20 +13,23 @@ const StyledBlock = styled.div`
 
 export default function InfoBlock(props) {
   const [visibility, setVisibility] = useState("false");
-  const [height, setH] = useState("85px");
+  const [height, setHeigt] = useState("85px");
+  const [rotation, setRotate] = useState("0deg");
+
   function changeVisibility() {
     if (visibility === "false") {
       setVisibility("true");
-      setH("100%");
+      setHeigt("100%");
+      setRotate("180deg");
     } else {
       setVisibility("false");
-      setH("85px");
+      setHeigt("85px");
+      setRotate("0deg");
     }
-    console.log(visibility);
   }
 
   return (
-    <visibilityContext.Provider value={{ changeVisibility }}>
+    <visibilityContext.Provider value={{ changeVisibility, rotation }}>
       <StyledBlock {...props} height={height}></StyledBlock>
     </visibilityContext.Provider>
   );
