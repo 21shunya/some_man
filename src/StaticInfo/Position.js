@@ -1,15 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import InfoBlock from "./InfoBlock";
+import ItemTitle from "./ItemTitle";
 
 export default function Position(props) {
+
   return (
-    <div className="static-item">
-      <div className="static-item-title">
-        <div className="title-marker">
-          <span className="ellipse"></span>
-          {props.position.title}
-        </div>
-        <img src="icons.svg" />
-      </div>
+    <InfoBlock>
+      <ItemTitle props={props}></ItemTitle>
       <div className="position-info">
         <div className="positiion-name">{props.position.pos}</div>
         <ul className="static-info-list">
@@ -20,6 +17,6 @@ export default function Position(props) {
           ))}
         </ul>
       </div>
-    </div>
+    </InfoBlock>
   );
 }

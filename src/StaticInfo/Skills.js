@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Shapes from "./Shapes.js";
+import InfoBlock from "./InfoBlock.js";
+import ItemTitle from "./ItemTitle.js";
+
 const styles = {
   langName: {
     fontWeight: 700,
@@ -9,15 +12,10 @@ const styles = {
 };
 
 export default function Skills(props) {
+ 
   return (
-    <div className="static-item">
-      <div className="static-item-title">
-        <div className="title-marker">
-          <span className="ellipse"></span>
-          {props.skills.title}
-        </div>
-        <img src="icons.svg" />
-      </div>
+    <InfoBlock>
+      <ItemTitle props={props}></ItemTitle>
       <div className="pos-info-item">
         <span className="text-secondary">языки:</span>
         <ul className="static-info-list">
@@ -37,6 +35,6 @@ export default function Skills(props) {
           })}
         </ul>
       </div>
-    </div>
+    </InfoBlock>
   );
 }
