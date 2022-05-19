@@ -4,6 +4,7 @@ import ExpItem from "./ExpItem";
 
 export default function Experience(btnName) {
   const elemName = "exp";
+  console.log(elemName, document.documentElement.clientHeight)
   const exp = [
     {
       startDate: "Июнь 2021",

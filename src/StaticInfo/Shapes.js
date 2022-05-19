@@ -10,9 +10,9 @@ export default function Shapes({ line, index }) {
 
   return (
     <li className="shape_line">
-        {line.shapes.map((item, index) => {
+        { line.shapes.map((item, index) => {
           return <SkillShape key={index} item={item} color={color} index={index}/>;
-        })}
+        }) }
     </li>
   );
 }
