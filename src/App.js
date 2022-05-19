@@ -1,6 +1,6 @@
-import React from "react";
-import StaticInfo from "./StaticInfo/StaticInfo";
-import Activity from "./Activity/Activity";
+import React from 'react';
+import StaticInfo from './StaticInfo/StaticInfo';
+import Activity from './Activity/Activity';
 
 
 function App() {

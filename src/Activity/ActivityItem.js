@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { Fade } from "react-reveal";
+import React from 'react';
+import styled from 'styled-components';
+import { Fade } from 'react-reveal';
+import PropTypes from 'prop-types';
 
 const StyledFlex = styled.div`
   display: flex;
@@ -10,13 +11,19 @@ const StyledFlex = styled.div`
 `;
 
 export default function ActivityItem(props) {
+
   return props.elemName === props.btnName.btnName ? (
     <Fade bottom>
       <StyledFlex {...props} opacity="1" />
     </Fade>
   ) : (
     <Fade bottom>
-    <StyledFlex {...props} opacity="0.1" />
+      <StyledFlex {...props} opacity="0.1" />
     </Fade>
   );
 }
+
+ActivityItem.propTypes = {
+  btnName: PropTypes.object,
+  elemName: PropTypes.string
+};

@@ -1,6 +1,6 @@
-import React from "react";
-import Header from "./Header";
-import MainInfo from "./MainInfo";
+import React from 'react';
+import Header from './Header';
+import MainInfo from './MainInfo';
 
 export default function StaticInfo() {
 

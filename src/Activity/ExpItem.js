@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function ExpItem({ item }) {
   return (
@@ -12,13 +13,13 @@ export default function ExpItem({ item }) {
         <div className="exp-info-title">
           <span className="exp-companyName">{item.name} </span>
           <span className="exp-companyInfo">
-            {" "}
+            {' '}
             ({item.city}, {item.link})
           </span>
         </div>
         <div className="exp-positon">{item.position}</div>
         <ul className="exp-stack-list">
-            <span className="exp-stack-title">Stack:</span>
+          <span className="exp-stack-title">Stack:</span>
           {item.stack.map((st, index) => (
             <li key={index}>{st}</li>
           ))}
@@ -27,3 +28,8 @@ export default function ExpItem({ item }) {
     </div>
   );
 }
+
+ExpItem.propTypes = {
+  item: PropTypes.object,
+};
+

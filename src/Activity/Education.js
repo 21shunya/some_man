@@ -1,8 +1,8 @@
-import React from "react";
-import ActivityItem from "./ActivityItem";
+import React from 'react';
+import ActivityItem from './ActivityItem';
 
 export default function Education(btnName) {
-  const elemName = 'education'
+  const elemName = 'education';
   return (
     <ActivityItem elemName={elemName} btnName={btnName} id="education">
       <div>Education</div>

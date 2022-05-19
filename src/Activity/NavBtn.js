@@ -1,5 +1,6 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledBtn = styled.button`
   font-family: "Ubuntu";
@@ -34,3 +35,8 @@ export default function NavBtn(props) {
     <StyledBtn {...props} />
   );
 }
+
+NavBtn.propTypes = {
+  name: PropTypes.string,
+  btnName: PropTypes.object
+};

@@ -1,6 +1,7 @@
-import React, { useContext, useState } from "react";
-import styled from "styled-components";
-import Context from "../Context";
+import React, { useContext } from 'react';
+import styled from 'styled-components';
+import Context from '../Context';
+import PropTypes from 'prop-types';
 
 const StyledTitle = styled.div`
   white-space: nowrap;
@@ -42,3 +43,7 @@ export default function ItemTitle(props) {
     </StyledTitle>
   );
 }
+
+ItemTitle.propTypes = {
+  title: PropTypes.string
+};

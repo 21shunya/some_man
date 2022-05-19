@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
-import ActivityItem from "./ActivityItem";
-import Context from "../Context";
+import React from 'react';
+import ActivityItem from './ActivityItem';
 
 export default function About(btnName) {
-  const elemName = 'about'
-  
+  const elemName = 'about';
+
   return (
     <ActivityItem id={elemName} elemName={elemName} btnName={btnName}>
       <div>About</div>

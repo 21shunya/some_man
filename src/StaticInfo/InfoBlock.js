@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import Context from "../Context";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import Context from '../Context';
 
 const StyledBlock = styled.div`
   display: flex;
@@ -12,19 +12,19 @@ const StyledBlock = styled.div`
 `;
 
 export default function InfoBlock(props) {
-  const [visibility, setVisibility] = useState("false");
-  const [height, setHeigt] = useState("85px");
-  const [rotation, setRotate] = useState("0deg");
+  const [visibility, setVisibility] = useState('false');
+  const [height, setHeigt] = useState('85px');
+  const [rotation, setRotate] = useState('0deg');
 
   function changeVisibility() {
-    if (visibility === "false") {
-      setVisibility("true");
-      setHeigt("100%");
-      setRotate("180deg");
+    if (visibility === 'false') {
+      setVisibility('true');
+      setHeigt('100%');
+      setRotate('180deg');
     } else {
-      setVisibility("false");
-      setHeigt("85px");
-      setRotate("0deg");
+      setVisibility('false');
+      setHeigt('85px');
+      setRotate('0deg');
     }
   }
 
