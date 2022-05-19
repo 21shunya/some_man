@@ -13,6 +13,92 @@ body {
   overflow: hidden;
 }
 
+.a {
+  position: absolute;
+width: 100%;
+height: 100%;
+left: 0px;
+top: 0px;
+background: rgba(242, 242, 242, 0.501);
+/* backdrop-filter: blur(80px); */
+}
+
+.el-1-1{
+  position: absolute;
+  width: 545.22px;
+  height: 450.8px;
+  right: 1565px;
+  top: 407px;
+  animation: move12 5s infinite linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move12{
+  0%{transform: translate(0px, 0px)}
+  25%{transform: translate(-50px, -10px)}
+  50%{transform: translate(-30px, -30px)}
+  75%{transform: translate(-10px, 50px)}
+  100%{transform: translate(0px, 0px)}
+}
+
+.el-1-2{
+  position: absolute;
+width: 239.43px;
+height: 326.73px;
+right: 1600px;
+top: 526.51px;
+animation: move21 5s infinite linear;
+  animation-iteration-count: infinite;
+}
+
+.el-2-1{
+  position: absolute;
+  width: 486.84px;
+  height: 327.78px;
+  right: 850px;
+  top: 60px;
+  animation: move21 5s infinite linear;
+  animation-iteration-count: infinite;
+}
+
+.el-2-2{
+  position: absolute;
+width: 213.95px;
+height: 363.34px;
+right: 800px;
+top: 92.01px;
+  animation: move22 5s infinite linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move22{
+  0%{transform: translate(0px, 0px)}
+  25%{transform: translate(-30px, -30px)}
+  50%{transform: translate(0px, -30px)}
+  75%{transform: translate(-10px, 50px)}
+  100%{transform: translate(0px, 0px)}
+}
+
+.el-3-1{
+  position: absolute;
+width: 439.28px;
+height: 458.85px;
+right: 0px;
+top: 647.17px;
+  animation: move12 5s infinite linear;
+  animation-iteration-count: infinite;
+}
+
+.el-3-2{
+  position: absolute;
+width: 157.89px;
+height: 304.19px;
+right: 26px;
+top: 798.8px;
+  animation: move12 5s infinite linear;
+  animation-iteration-count: infinite;
+}
+
 .body-wrap {
   display: flex;
   flex-direction: row;
