@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import visibilityContext from "../VisibilityContext";
+import Context from "../Context";
 
 const StyledBlock = styled.div`
   display: flex;
@@ -29,8 +29,8 @@ export default function InfoBlock(props) {
   }
 
   return (
-    <visibilityContext.Provider value={{ changeVisibility, rotation }}>
+    <Context.Provider value={{ changeVisibility, rotation }}>
       <StyledBlock {...props} height={height}></StyledBlock>
-    </visibilityContext.Provider>
+    </Context.Provider>
   );
 }

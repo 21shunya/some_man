@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
-import visibilityContext from "../VisibilityContext";
+import Context from "../Context";
 
 const StyledTitle = styled.div`
   white-space: nowrap;
@@ -28,7 +28,7 @@ const StyledIconButton = styled.button`
 `;
 
 export default function ItemTitle(props) {
-  const { changeVisibility, rotation } = useContext(visibilityContext);
+  const { changeVisibility, rotation } = useContext(Context);
 
   return (
     <StyledTitle>
